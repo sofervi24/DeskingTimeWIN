@@ -1,0 +1,32 @@
+{
+  "name": "desking-time",
+  "version": "1.0.0",
+  "description": "Time tracker for mac os",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Gerardo Vivas <vivas.fermin24@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.2.0",
+    "electron-builder": "^23.0.3"
+  },
+  "build": {
+    "appId": "com.deskingtime.osx",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "identity": "AK99LJT99K",
+      "target": "dmg",
+      "type": "distribution"
+    },
+    "extraResources": [
+      "res/**/*"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "moment": "^2.29.3"
+  }
+}

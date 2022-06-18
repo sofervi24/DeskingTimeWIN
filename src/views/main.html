@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <title>Desking Time</title>
+</head>
+<body>
+    <div class="container py-1">
+        <div class="row my-1">
+            <div class="col-4 text-start">
+                <button 
+                    id="button-start"
+                    class="btn btn-primary"
+                    data-running="0"
+                >Start</button>
+            </div>
+            <div class="col-8 text-end">
+                <span class="fs-1 fw-bold text-secondary" id="clock-label">0:00:00</span>
+            </div>
+        </div>
+        <div class="card w-100">
+            <img src="../assets/default.jpeg" class="card-img-top" id="last-screenshot-image">
+            <div class="card-body p-0 px-1 text-end">
+                <small class="fw-bold" id="last-screenshot-datetime"></small>
+            </div>
+        </div>
+    </div>
+    <video src="" id="screenshot-video" style="display: none;"></video>
+    <script src="../assets/main.js" type="module"></script>
+</body>
+</html>
